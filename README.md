@@ -6,17 +6,23 @@
 <br/><br/>
 [QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf](http://quansheng.v6.navy/docs/QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf) 
 <hr/>
+TX
+
+<img src="/docs/img/display6.jpg" />
 
 ## Features:
 - Spectrum Analyzer + Scan: F + 5 (NOAA feature), etc...
 - TX/RX Freq Ranges full 15 MHz - 2 GHz
 - RX Modulation:
 FM, WFM, AM, SSB, RAW
-- Tone Burst:
-Repeater default Tone 1750 Hz: Sidekey F2 + PTT
-NOAA Tone-Squelch 1050 Hz: Sidekey S1
+- 2 different Tone Burst:
+- Repeater default Tone 1750 Hz: Sidekey F2 + PTT
+- NOAA Tone-Squelch 1050 Hz: Sidekey S1
 - ...and much more...
 
+RX
+
+<img src="/docs/img/display3.jpg" />
 
 # Open reimplementation of the Quan Sheng UV K5 v2.1.27 firmware
 
