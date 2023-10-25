@@ -62,4 +62,6 @@ jobs:
         release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
         draft: false
         prerelease: false
+        overwrite: false
+        last_created_at: $(date +'%d.%m.%Y')
 #created_at
