@@ -6,9 +6,10 @@
 <br/><br/>
 [QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf](http://quansheng.v6.navy/docs/QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf) 
 <hr/>
-TX
 
-<img src="/docs/img/display6.jpg" />
+TX:
+
+<a href="/docs/img/display6.jpg"><img src="/docs/img/display6m.jpg" /></a>
 
 ## Features:
 - Spectrum Analyzer + Scan: F + 5 (NOAA feature), etc...
@@ -20,9 +21,9 @@ FM, WFM, AM, SSB, RAW
 - NOAA Tone-Squelch 1050 Hz: Sidekey S1
 - ...and much more...
 
-RX
+RX:
 
-<img src="/docs/img/display3.jpg" />
+<a href="/docs/img/display3.jpg"><img src="/docs/img/display3m.jpg" /></a>
 
 # Open reimplementation of the Quan Sheng UV K5 v2.1.27 firmware
 
