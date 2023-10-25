@@ -60,8 +60,8 @@ jobs:
         
         tag: ${{ format('release-{0}', github.run_number) }}
         release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
-        draft: false
+ #      draft: false
         prerelease: false
         overwrite: false
- #       last_created_at: $(date +'%d.%m.%Y')
+        last_created_at: $(date +'%d.%m.%Y')
 #created_at
