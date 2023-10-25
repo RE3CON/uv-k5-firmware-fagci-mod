@@ -2,8 +2,10 @@
 [Latest Source](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/archive/refs/heads/main.zip)
 
 # Instructions PDF English:
-[fagci_specrum_help_20231010-0735 en.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169259/fagci_specrum_help_20231010-0735.en.pdf)<br/><br/>
-[QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169258/QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf)<hr/>
+[fagci_specrum_help_20231010-0735 en.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169259/fagci_specrum_help_20231010-0735.en.pdf) 
+<br/><br/>
+[QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169258/QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf) 
+<hr/>
 
 ## Features:
 - Spectrum Analyzer + Scan: F + 5 (NOAA feature), etc...
