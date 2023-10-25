@@ -48,9 +48,9 @@ jobs:
         file: firmware.bin
         asset_name: ${{ format('firmware.raw_v{0}.bin', github.run_number) }}
   
-   - name: Get the date
-     id: date
-     run: echo "::set-output name=date::$(date +'%d-%m-%Y')"
+    - name: Get the date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
     - name: 'Add packed FW to release'
       uses: svenstaro/upload-release-action@v2
@@ -63,5 +63,5 @@ jobs:
  #      draft: false
         prerelease: false
         overwrite: false
-#        last_created_at: $(date +'%d.%m.%Y')
+  #      last_created_at: $(date +'%d.%m.%Y')
 #created_at
