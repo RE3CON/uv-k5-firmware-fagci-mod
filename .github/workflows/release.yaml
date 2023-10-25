@@ -17,6 +17,13 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+  - name: run number with offset
+    env:
+    NUM: ${{ github.run_number }}
+    run: |
+echo ::set-env name=GITHUB_RUN_NUMBER_WITH_OFFSET::$(($NUM+200))
+    - run: echo $GITHUB_RUN_NUMBER_WITH_OFFSET
+    
     - name: arm-none-eabi-gcc
       uses: carlosperate/arm-none-eabi-gcc-action@v1
       with:
@@ -45,9 +52,6 @@ jobs:
     - name: Get the date
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-
-    - name: Increase build
-       run: | echo "GITHUB_RUN_NUMBER_WITH_OFFSET=$(($GITHUB_RUN_NUMBER+1978))" >> $GITHUB_ENV
 
     - name: 'Add unpacked FW to release'
       uses: svenstaro/upload-release-action@v2
