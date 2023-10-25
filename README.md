@@ -1,3 +1,18 @@
+# Instructions PDF English:
+[fagci_specrum_help_20231010-0735 en.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169259/fagci_specrum_help_20231010-0735.en.pdf)<br><br>
+[QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169258/QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf)<hr>
+
+## Features:
+- Spectrum Analyzer + Scan: F + 5 (NOAA feature), etc...
+- TX/RX Freq Ranges full 15 MHz - 2 GHz
+- RX Modulation:
+FM, WFM, AM, SSB, RAW
+- Tone Burst:
+Repeater default Tone 1750 Hz: Sidekey F2 + PTT
+NOAA Tone-Squelch 1050 Hz: Sidekey S1
+- ...and much more...
+
+
 # Open reimplementation of the Quan Sheng UV K5 v2.1.27 firmware
 
 This repository is a preservation project of the UV K5 v2.1.27 firmware.
