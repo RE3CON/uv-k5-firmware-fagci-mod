@@ -52,4 +52,3 @@ jobs:
         file: uv-k5-firmware-fagci-mod-${{ github.event.release.tag_name }}.bin
        # tag: v1.0.5
 #created_at
-tag: - v*
