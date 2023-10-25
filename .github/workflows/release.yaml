@@ -11,7 +11,7 @@ on:
   release:
     types:
       - published
- #      draft: false
+ #    - draft
  #    - prerelease        
  #    - created     
 
@@ -54,15 +54,15 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         file: firmware.bin
-        asset_name: ${{ format('firmware.raw_v5{0}.bin', github.run_number) }}
-        tag: ${{ format('release-5{0}', github.run_number) }}
-        release_name: ${{ format('Release 5{0}, {1}', github.run_number, steps.date.outputs.date) }}
+        asset_name: ${{ format('firmware.raw_v1{0}.bin', github.run_number) }}
+        tag: ${{ format('release-1{0}', github.run_number) }}
+        release_name: ${{ format('Release 1{0}, {1}', github.run_number, steps.date.outputs.date) }}
   
     - name: 'Add packed FW to release'
       uses: svenstaro/upload-release-action@v2
       with:
         file: uv-k5-firmware-fagci-mod-special${{ github.event.release.tag_name }}.bin
-        asset_name: ${{ format('uv-k5-firmware-fagci-mod-special_v5{0}.bin', github.run_number) }}
-        tag: ${{ format('release-5{0}', github.run_number) }}
-        release_name: ${{ format('Release 5{0}, {1}', github.run_number, steps.date.outputs.date) }}
+        asset_name: ${{ format('uv-k5-firmware-fagci-mod-special_v1{0}.bin', github.run_number) }}
+        tag: ${{ format('release-1{0}', github.run_number) }}
+        release_name: ${{ format('Release 1{0}, {1}', github.run_number, steps.date.outputs.date) }}
 #created_at
