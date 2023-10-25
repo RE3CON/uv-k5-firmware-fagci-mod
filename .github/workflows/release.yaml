@@ -4,6 +4,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+        tags:
+      - v*
   
   release:
     types:
@@ -48,4 +50,5 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         file: uv-k5-firmware-fagci-mod-${{ github.event.release.tag_name }}.bin
-        tag: v1.0.5
+       # tag: v1.0.5
+#created_at
