@@ -42,6 +42,33 @@ For improved/better firmware and new features, you can find the following reposi
 * [https://github.com/Tunas1337/uv-k5-firmware](https://github.com/Tunas1337/uv-k5-firmware) (Check the branches)
 * [https://github.com/rebezhir/openquack](https://github.com/rebezhir/openquack) for Russian Lang. speaking users
 
+# Makefile Feature Settings
+Edit Makefile before building the F/W
+
+- 1 = enable
+- 2 = disable
+<pre>
+ENABLE_AIRCOPY := 0
+ENABLE_ALARM := 0
+ENABLE_AM_FIX := 1
+ENABLE_FMRADIO := 0
+ENABLE_NOAA := 0
+ENABLE_OVERLAY := 0
+ENABLE_SPECTRUM := 1
+ENABLE_SWD := 1
+ENABLE_TX1750 := 1
+ENABLE_UART := 1
+ENABLE_NOSCANTIMEOUT := 1
+ENABLE_KEEPNAMEONSAVE := 1
+ENABLE_RSSIBAR := 1
+ENABLE_ALL_REGISTERS := 1
+ENABLE_FASTER_CHANNEL_SCAN := 1
+ENABLE_UART_CAT := 1
+
+SPECTRUM_AUTOMATIC_SQUELCH := 1
+SPECTRUM_EXTRA_VALUES := 1
+</pre>
+
 # Compiler
 
 arm-none-eabi GCC version 10.3.1 is recommended, which is the current version on Ubuntu 22.04.03 LTS.
