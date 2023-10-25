@@ -1,3 +1,5 @@
+# [Releases and Downloads](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/releases)<br>
+Latest Source
 # Instructions PDF English:
 [fagci_specrum_help_20231010-0735 en.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169259/fagci_specrum_help_20231010-0735.en.pdf)<br><br>
 [QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169258/QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf)<hr>
