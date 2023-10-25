@@ -11,19 +11,17 @@ on:
   release:
     types:
       - published
+ #      draft: false
+        prerelease: false
+        overwrite: false
+  #      last_created_at: $(date +'%d.%m.%Y')     
 
 jobs:
   build:
     runs-on: ubuntu-22.04
 
     steps:
-  - name: run number with offset
-    env:
-    NUM: ${{ github.run_number }}
-    run: |
-echo ::set-env name=GITHUB_RUN_NUMBER_WITH_OFFSET::$(($NUM+200))
-    - run: echo $GITHUB_RUN_NUMBER_WITH_OFFSET
-    
+     
     - name: arm-none-eabi-gcc
       uses: carlosperate/arm-none-eabi-gcc-action@v1
       with:
@@ -68,8 +66,5 @@ echo ::set-env name=GITHUB_RUN_NUMBER_WITH_OFFSET::$(($NUM+200))
         asset_name: ${{ format('uv-k5-firmware-fagci-mod-special_v{0}.bin', github.run_number) }}
         tag: ${{ format('release-{0}', github.run_number) }}
         release_name: ${{ format('Release {0}, {1}', github.run_number, steps.date.outputs.date) }}
- #      draft: false
-        prerelease: false
-        overwrite: false
-  #      last_created_at: $(date +'%d.%m.%Y')
+ 
 #created_at
