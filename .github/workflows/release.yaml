@@ -4,8 +4,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]    
-    tags:
-      - "v[0-9]+.[0-9]+.[0-9]+"
+#    tags:
+#      - "v[0-9]+.[0-9]+.[0-9]+"
     
   
   release:
@@ -27,8 +27,8 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+    #  with:
+    #    fetch-depth: 0
 
     - name: Submodules
       run: git submodule update --init --recursive --depth 1
@@ -48,9 +48,9 @@ jobs:
         file: firmware.bin
         asset_name: ${{ format('firmware.raw_v{0}.bin', github.run_number) }}
   
-    - name: Get the date
-      id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+ #  - name: Get the date
+ #     id: date
+ #     run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
     - name: 'Add packed FW to release'
       uses: svenstaro/upload-release-action@v2
@@ -63,5 +63,5 @@ jobs:
         draft: false
         prerelease: false
         overwrite: false
-        last_created_at: $(date +'%d.%m.%Y')
+ #       last_created_at: $(date +'%d.%m.%Y')
 #created_at
