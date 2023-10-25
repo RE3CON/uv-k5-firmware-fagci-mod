@@ -65,5 +65,4 @@ jobs:
         asset_name: ${{ format('uv-k5-firmware-fagci-mod-special_v5{0}.bin', github.run_number) }}
         tag: ${{ format('release-5{0}', github.run_number) }}
         release_name: ${{ format('Release 5{0}, {1}', github.run_number, steps.date.outputs.date) }}
-overwrite: false
 #created_at
