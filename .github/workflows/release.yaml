@@ -46,6 +46,10 @@ jobs:
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
+    - name: Increase build
+       run: |
+         echo "GITHUB_RUN_NUMBER_WITH_OFFSET=$(($GITHUB_RUN_NUMBER+1978))" >> $GITHUB_ENV
+
     - name: 'Add unpacked FW to release'
       uses: svenstaro/upload-release-action@v2
       with:
