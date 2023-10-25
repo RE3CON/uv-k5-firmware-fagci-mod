@@ -2,9 +2,9 @@
 [Latest Source](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/archive/refs/heads/main.zip)
 
 # Instructions PDF English:
-[fagci_specrum_help_20231010-0735 en.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169259/fagci_specrum_help_20231010-0735.en.pdf) 
+[fagci_specrum_help_20231010-0735 en.pdf](http://quansheng.v6.navy/docs/fagci_specrum_help_20231010-0735%20en.pdf)
 <br/><br/>
-[QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/files/13169258/QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf) 
+[QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf](http://quansheng.v6.navy/docs/QuanSheng.UV.K5.Spectrum.analyzer.guide.EN.pdf) 
 <hr/>
 
 ## Features:
@@ -30,16 +30,16 @@ This branch will also accumulate fixes/improvements from newer releases by QS (f
 
 For improved/better firmware and new features, you can find the following repositories by other collaborators:
 
-* https://github.com/fagci/uv-k5-firmware-fagci-mod
-* https://github.com/OneOfEleven/uv-k5-firmware-custom
-* https://github.com/Tunas1337/uv-k5-firmware (Check the branches)
-* https://github.com/rebezhir/openquack for Russian users
+* [https://github.com/fagci/uv-k5-firmware-fagci-mod](https://github.com/fagci/uv-k5-firmware-fagci-mod)
+* [https://github.com/OneOfEleven/uv-k5-firmware-custom](https://github.com/OneOfEleven/uv-k5-firmware-custom)
+* [https://github.com/Tunas1337/uv-k5-firmware](https://github.com/Tunas1337/uv-k5-firmware) (Check the branches)
+* [https://github.com/rebezhir/openquack](https://github.com/rebezhir/openquack) for Russian Lang. speaking users
 
 # Compiler
 
 arm-none-eabi GCC version 10.3.1 is recommended, which is the current version on Ubuntu 22.04.03 LTS.
-Other versions may generate a flash file that is too big.
-You can get an appropriate version from: https://developer.arm.com/downloads/-/gnu-rm
+Other versions may generate a flash file that is too big with >60kb.
+You can get an appropriate version from: [https://developer.arm.com/downloads/-/gnu-rm](https://developer.arm.com/downloads/-/gnu-rm)
 
 # Building
 
@@ -85,7 +85,7 @@ Many thanks to various people on Telegram for putting up with me during this eff
 # License
 
 Copyright 2023 Dual Tachyon
-https://github.com/DualTachyon
+[https://github.com/DualTachyon](https://github.com/DualTachyon)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
