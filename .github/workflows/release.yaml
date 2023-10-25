@@ -56,5 +56,5 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         file: uv-k5-firmware-fagci-mod-${{ github.event.release.tag_name }}.bin
-       # tag: v1.0.5
+        asset_name: ${{ format('uv-k5-firmware-fagci-mod-_v{0}.bin', github.run_number) }}
 #created_at
