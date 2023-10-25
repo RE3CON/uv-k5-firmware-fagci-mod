@@ -5,7 +5,8 @@ on:
   pull_request:
     branches: [ "main" ]    
     tags:
-    - '*'
+      - "v[0-9]+.[0-9]+.[0-9]+"
+    
   
   release:
     types:
@@ -45,8 +46,11 @@ jobs:
       uses: svenstaro/upload-release-action@v2
       with:
         file: firmware.bin
-        asset_name: firmware.raw.bin
-        tag: v1.0.5
+        asset_name: ${{ format('firmware.raw_v{0}.bin', github.run_number) }}
+  
+    - name: Get the date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
     - name: 'Add packed FW to release'
       uses: svenstaro/upload-release-action@v2
