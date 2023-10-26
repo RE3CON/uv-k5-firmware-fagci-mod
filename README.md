@@ -12,7 +12,7 @@ TX:
 <a href="/docs/img/display6.jpg"><img src="/docs/img/display6m.jpg" /></a>
 
 ## Features:
-- Spectrum Analyzer + Scan: F + 5 (NOAA feature), etc...
+- Spectrum Analyzer + Scan: F + 5 (replace NOAA feature), etc...
 - TX/RX Freq Ranges full 15 MHz - 2 GHz
 - RX Modulation:
 FM, WFM, AM, SSB, RAW
@@ -46,7 +46,7 @@ For improved/better firmware and new features, you can find the following reposi
 Edit Makefile before building the F/W
 
 - 1 = enable
-- 2 = disable
+- 0 = disable
 <pre>
 ENABLE_AIRCOPY := 0
 ENABLE_ALARM := 0
@@ -85,7 +85,7 @@ make
 
 # Flashing with the official updater
 
-* Use the firmware.packed.bin file
+* Use the uv-k5-firmware-fagci-mod-special_vxxx.bin file
 
 # Flashing with [k5prog](https://github.com/piotr022/k5prog)
 
