@@ -4,10 +4,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]    
-#    tags:
-#      - "v[0-9]+.[0-9]+.[0-9]+"
-    
-  
+ 
   release:
     types:
       - published
@@ -17,14 +14,16 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
      
     - name: arm-none-eabi-gcc
       uses: carlosperate/arm-none-eabi-gcc-action@v1
       with:
-        release: '10.3-2021.10'
+       # release: 'latest'
+       release: '11.3.Rel1'
+       # release: '11.2-2022.02'
 
     - name: Install Python dependencies
       run: python3 -m pip install --upgrade pip crcmod
@@ -44,25 +43,26 @@ jobs:
       run:  arm-none-eabi-size firmware
 
     - name: rename
-      run: mv firmware.packed.bin uv-k5-firmware-fagci-mod-special${{ github.event.release.tag_name }}.bin
+      run: mv firmware.packed.bin firmware_packed${{ github.event.release.tag_name }}.bin
 
     - name: Get the date
       id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+ #    run: echo "::set-output name=date::$(date +'%A %d.%m.%Y %H:%M - %Z')" #>> $GITHUB_OUTPUT
+ #    run: echo "::set-output name=date::$(date +'%Y-%m-%d')"  
+      run: echo "date=$(date +'%A %d.%m.%Y %H:%M - %Z')" >> $GITHUB_OUTPUT
 
     - name: 'Add unpacked FW to release'
       uses: svenstaro/upload-release-action@v2
       with:
         file: firmware.bin
-        asset_name: ${{ format('firmware.raw_v1{0}.bin', github.run_number) }}
-        tag: ${{ format('release-1{0}', github.run_number) }}
-        release_name: ${{ format('Release 1{0}, {1}', github.run_number, steps.date.outputs.date) }}
+        asset_name: ${{ format('firmware_raw_0.{0}.bin', github.run_number) }}
+        tag: ${{ format('release-{0}', github.run_number) }}
+        release_name: ${{ format('Build 0.{0}, {1}', github.run_number, steps.date.outputs.date) }}
   
     - name: 'Add packed FW to release'
       uses: svenstaro/upload-release-action@v2
       with:
-        file: uv-k5-firmware-fagci-mod-special${{ github.event.release.tag_name }}.bin
-        asset_name: ${{ format('uv-k5-firmware-fagci-mod-special_v1{0}.bin', github.run_number) }}
-        tag: ${{ format('release-1{0}', github.run_number) }}
-        release_name: ${{ format('Release 1{0}, {1}', github.run_number, steps.date.outputs.date) }}
-#created_at
+        file: firmware_packed${{ github.event.release.tag_name }}.bin
+        asset_name: ${{ format('firmware_packed_0.{0}.bin', github.run_number) }}
+        tag: ${{ format('release-{0}', github.run_number) }}
+        release_name: ${{ format('Build 0.{0}, {1}', github.run_number, steps.date.outputs.date) }}
