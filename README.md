@@ -11,7 +11,7 @@ TX:
 
 <a href="/docs/img/display6.jpg"><img src="/docs/img/display6m.jpg" /></a>
 
-## Features:
+#[# Features:](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/releases)
 - Spectrum Analyzer + Scan: F + 5 (replace NOAA feature), etc...
 - TX/RX Freq Ranges full 15 MHz - 2 GHz
 - RX Modulation:
@@ -42,7 +42,7 @@ For improved/better firmware and new features, you can find the following reposi
 * [https://github.com/Tunas1337/uv-k5-firmware](https://github.com/Tunas1337/uv-k5-firmware) (Check the branches)
 * [https://github.com/rebezhir/openquack](https://github.com/rebezhir/openquack) for Russian Lang. speaking users
 
-# Makefile Feature Settings
+# [Makefile Feature Settings](https://github.com/RE3CON/uv-k5-firmware-fagci-mod/releases)
 Edit Makefile before building the F/W
 
 - 1 = enable
